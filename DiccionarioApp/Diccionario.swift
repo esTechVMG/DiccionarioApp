@@ -9,19 +9,11 @@ class Diccionario{
         ("cangrejo","crab"),
         ("realidad","reality")
     ]
-    func searchTranslation(word:String) -> String {
-        for dictWord in wordList as Array<(String,String)> {
-            if dictWord.0 == word {
-                return dictWord.1
-            }
-            if dictWord.1 == word{
-                return dictWord.0
-            }
-        }
-        return "Error: no se encontro ninguna traduccion"
+    func searchTranslation(word:String) -> [(String,String)] {
+        return wordList.filter({(wordItem:(es:String,en:String)) in return wordItem.0.contains(word) || wordItem.1.contains(word)})
     }
     func addToWordList(word:(spanish:String, english:String)) -> Bool {
-        if word.0.isEmpty || word.1.isEmpty{
+        if checkEmpty(word: word){
             return false
         }else{
             wordList.append(word)
@@ -37,9 +29,18 @@ class Diccionario{
         }
         return false
     }
-    func modifyWord() -> Void {
-        
-        return
+    func modifyWord(pos:Int,newModify:(String,String)) -> Void {
+        if(checkEmpty(word: newModify)){
+            wordList[pos] = newModify
+        }
+    }
+    //Added just for easing app development. not sure if its really going to be used
+    func getWordAtIndex(pos:Int) -> (String,String) {
+        return wordList[pos]
+    }
+    
+    func checkEmpty(word:(String,String)) -> Bool {
+        return !word.0.isEmpty || word.1.isEmpty
     }
 }
 
