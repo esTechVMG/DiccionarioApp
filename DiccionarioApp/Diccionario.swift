@@ -1,18 +1,14 @@
 import Foundation
 
 class Diccionario{
-    private var wordList:Array<(String,String)>
-    
-    init(){
-        wordList=[
+    private var wordList:Array<(String,String)> = [
             ("payaso","clown"),
             ("gratis","free"),
             ("capa","layer"),
             ("perro","dog"),
             ("cangrejo","crab"),
             ("realidad","reality")
-        ]
-    }
+    ]
     public func searchTranslation(word:String) -> [(String,String)] {
         return wordList.filter({(wordItem:(es:String,en:String)) in return wordItem.0.contains(word) || wordItem.1.contains(word)})
     }
@@ -41,6 +37,9 @@ class Diccionario{
     //Added just for easing app development. not sure if its really going to be used
     public func getWordAtIndex(pos:Int) -> (String,String) {
         return wordList[pos]
+    }
+    public func getWordListSize() -> Int{
+        return wordList.count
     }
     
     public func checkEmpty(word:(String,String)) -> Bool {

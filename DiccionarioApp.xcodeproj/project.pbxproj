@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		05542335257A5B7300D65F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05542334257A5B7300D65F7F /* AppDelegate.swift */; };
 		05542337257A5B7300D65F7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05542336257A5B7300D65F7F /* SceneDelegate.swift */; };
-		05542339257A5B7300D65F7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05542338257A5B7300D65F7F /* ViewController.swift */; };
+		05542339257A5B7300D65F7F /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05542338257A5B7300D65F7F /* TranslateViewController.swift */; };
 		0554233C257A5B7300D65F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0554233A257A5B7300D65F7F /* Main.storyboard */; };
 		0554233E257A5B7400D65F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0554233D257A5B7400D65F7F /* Assets.xcassets */; };
 		05542341257A5B7400D65F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0554233F257A5B7400D65F7F /* LaunchScreen.storyboard */; };
 		0554234E257A5BB700D65F7F /* Diccionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554234D257A5BB700D65F7F /* Diccionario.swift */; };
+		30561FC7257AA85C001EC484 /* MyUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30561FC6257AA85C001EC484 /* MyUITabBarController.swift */; };
+		30561FCA257AB03F001EC484 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30561FC9257AB03F001EC484 /* DictionaryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05542331257A5B7300D65F7F /* DiccionarioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiccionarioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05542334257A5B7300D65F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05542336257A5B7300D65F7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05542338257A5B7300D65F7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05542338257A5B7300D65F7F /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		0554233B257A5B7300D65F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0554233D257A5B7400D65F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05542340257A5B7400D65F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05542342257A5B7400D65F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0554234D257A5BB700D65F7F /* Diccionario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diccionario.swift; sourceTree = "<group>"; };
+		30561FC6257AA85C001EC484 /* MyUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITabBarController.swift; sourceTree = "<group>"; };
+		30561FC9257AB03F001EC484 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			children = (
 				05542334257A5B7300D65F7F /* AppDelegate.swift */,
 				05542336257A5B7300D65F7F /* SceneDelegate.swift */,
-				05542338257A5B7300D65F7F /* ViewController.swift */,
+				05542338257A5B7300D65F7F /* TranslateViewController.swift */,
 				0554234D257A5BB700D65F7F /* Diccionario.swift */,
+				30561FC9257AB03F001EC484 /* DictionaryController.swift */,
+				30561FC6257AA85C001EC484 /* MyUITabBarController.swift */,
 				0554233A257A5B7300D65F7F /* Main.storyboard */,
 				0554233D257A5B7400D65F7F /* Assets.xcassets */,
 				0554233F257A5B7400D65F7F /* LaunchScreen.storyboard */,
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0554234E257A5BB700D65F7F /* Diccionario.swift in Sources */,
-				05542339257A5B7300D65F7F /* ViewController.swift in Sources */,
+				05542339257A5B7300D65F7F /* TranslateViewController.swift in Sources */,
+				30561FCA257AB03F001EC484 /* DictionaryController.swift in Sources */,
+				30561FC7257AA85C001EC484 /* MyUITabBarController.swift in Sources */,
 				05542335257A5B7300D65F7F /* AppDelegate.swift in Sources */,
 				05542337257A5B7300D65F7F /* SceneDelegate.swift in Sources */,
 			);
