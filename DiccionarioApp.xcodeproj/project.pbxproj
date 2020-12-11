@@ -14,8 +14,7 @@
 		0554233E257A5B7400D65F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0554233D257A5B7400D65F7F /* Assets.xcassets */; };
 		05542341257A5B7400D65F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0554233F257A5B7400D65F7F /* LaunchScreen.storyboard */; };
 		0554234E257A5BB700D65F7F /* Diccionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554234D257A5BB700D65F7F /* Diccionario.swift */; };
-		30561FC7257AA85C001EC484 /* MyUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30561FC6257AA85C001EC484 /* MyUITabBarController.swift */; };
-		30561FCA257AB03F001EC484 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30561FC9257AB03F001EC484 /* DictionaryController.swift */; };
+		304E4F662583CBCB003EF9E1 /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4F652583CBCB003EF9E1 /* MyCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +27,7 @@
 		05542340257A5B7400D65F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05542342257A5B7400D65F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0554234D257A5BB700D65F7F /* Diccionario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diccionario.swift; sourceTree = "<group>"; };
-		30561FC6257AA85C001EC484 /* MyUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITabBarController.swift; sourceTree = "<group>"; };
-		30561FC9257AB03F001EC484 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
+		304E4F652583CBCB003EF9E1 /* MyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +64,8 @@
 				05542336257A5B7300D65F7F /* SceneDelegate.swift */,
 				05542338257A5B7300D65F7F /* TranslateViewController.swift */,
 				0554234D257A5BB700D65F7F /* Diccionario.swift */,
-				30561FC9257AB03F001EC484 /* DictionaryController.swift */,
-				30561FC6257AA85C001EC484 /* MyUITabBarController.swift */,
 				0554233A257A5B7300D65F7F /* Main.storyboard */,
+				304E4F652583CBCB003EF9E1 /* MyCollectionCell.swift */,
 				0554233D257A5B7400D65F7F /* Assets.xcassets */,
 				0554233F257A5B7400D65F7F /* LaunchScreen.storyboard */,
 				05542342257A5B7400D65F7F /* Info.plist */,
@@ -148,10 +145,9 @@
 			files = (
 				0554234E257A5BB700D65F7F /* Diccionario.swift in Sources */,
 				05542339257A5B7300D65F7F /* TranslateViewController.swift in Sources */,
-				30561FCA257AB03F001EC484 /* DictionaryController.swift in Sources */,
-				30561FC7257AA85C001EC484 /* MyUITabBarController.swift in Sources */,
 				05542335257A5B7300D65F7F /* AppDelegate.swift in Sources */,
 				05542337257A5B7300D65F7F /* SceneDelegate.swift in Sources */,
+				304E4F662583CBCB003EF9E1 /* MyCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

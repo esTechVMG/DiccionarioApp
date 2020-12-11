@@ -10,16 +10,23 @@ class Diccionario{
             ("realidad","reality")
     ]
     public func searchTranslation(word:String) -> [(String,String)] {
-        return wordList.filter({(wordItem:(es:String,en:String)) in return wordItem.0.contains(word) || wordItem.1.contains(word)})
+        return wordList.filter({(wordItem:(es:String,en:String)) in return wordItem.es.contains(word.lowercased()) || wordItem.en.contains(word.lowercased())})
     }
     public func addToWordList(word:(spanish:String, english:String)) -> Bool {
-        if checkEmpty(word: word){
+        let wordLow = lowCase(word: word)
+        if checkEmpty(word: wordLow) && checkRepeated(word: wordLow){
             return false
         }else{
-            wordList.append(word)
+            print(wordLow)
+            wordList.append(wordLow)
             return true
         }
     }
+    
+    public func deleteWordAtIndex(pos:Int){
+        wordList.remove(at: pos)
+    }
+    
     public func deleteWord(word:String) -> Bool {
         for index in wordList.startIndex ... wordList.endIndex-1 {
             if wordList[index].0 == word || wordList[index].1 == word {
@@ -42,8 +49,14 @@ class Diccionario{
         return wordList.count
     }
     
-    public func checkEmpty(word:(String,String)) -> Bool {
-        return !word.0.isEmpty || word.1.isEmpty
+    private func checkEmpty(word:(String,String)) -> Bool {
+        return word.0.isEmpty || word.1.isEmpty
+    }
+    private func checkRepeated(word:(spanish:String, english:String)) -> Bool {
+        return searchTranslation(word: word.spanish).isEmpty && searchTranslation(word: word.english).isEmpty
+    }
+    private func lowCase(word:(spanish:String,english:String)) -> (String,String) {
+        return (word.spanish.lowercased(),word.english.lowercased())
     }
 }
 
