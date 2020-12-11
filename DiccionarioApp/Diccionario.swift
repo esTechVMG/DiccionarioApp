@@ -17,7 +17,6 @@ class Diccionario{
         if checkEmpty(word: wordLow) && checkRepeated(word: wordLow){
             return false
         }else{
-            print(wordLow)
             wordList.append(wordLow)
             return true
         }

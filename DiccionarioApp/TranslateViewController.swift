@@ -30,7 +30,6 @@ class TranslateViewController : UIViewController,UICollectionViewDelegateFlowLay
     @IBAction func translateButtonPressed(_ sender: Any) {
         let i:[(String,String)] = dict.searchTranslation(word: inputTextField.text!)
         if i.isEmpty {
-            print(i)
             outputTextField.text = "No se encontro traduccion"
         }else{
             let order = inputTextField.text?.lowercased() == i[0].0
@@ -56,8 +55,6 @@ class TranslateViewController : UIViewController,UICollectionViewDelegateFlowLay
         let submitAction = UIAlertAction(title: "Submit", style: .default, handler: {(action) in
             let a1:String = ac.textFields![0].text!
             let a2:String = ac.textFields![1].text!
-            print(a1)
-            print(a2)
             if !self.dict.addToWordList(word: (a1,a2)){
                 print("Error Adding word")
             }else{
